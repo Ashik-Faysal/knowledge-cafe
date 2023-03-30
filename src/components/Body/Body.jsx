@@ -9,12 +9,13 @@ const Body = () => {
       .then((data) => setUsers(data));
   }, []);
   return (
-    <div>
-      {users.map((user) => (
-          <SingleUser
-              user={user} key={user.id}
-          />
-      ))}
+    <div className="md:flex gap-4 my-12]">
+      <div className="md:w-[70%] ">
+        {users.map((user) => (
+          <SingleUser user={user} key={user.id} />
+        ))}
+      </div>
+      <div className="md:w-[25%]"> right side</div>
     </div>
   );
 };
