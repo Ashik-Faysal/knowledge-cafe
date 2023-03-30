@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ShowCart from "../ShowCart/ShowCart";
 import SingleUser from "../SingleUser/SingleUser";
 
 const Body = () => {
@@ -15,7 +16,9 @@ const Body = () => {
           <SingleUser user={user} key={user.id} />
         ))}
       </div>
-      <div className="md:w-[25%]"> right side</div>
+          <div className="md:w-[25%] card border border-warning">
+              <ShowCart />
+          </div>
     </div>
   );
 };
