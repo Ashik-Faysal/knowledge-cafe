@@ -1,13 +1,14 @@
-import './App.css'
-import Header from './components/Header'
+import "./App.css";
+import Body from "./components/Body/Body";
+import Header from "./components/Header/Header";
 
 function App() {
-
   return (
     <div className="App md:m-24">
-     <Header />
+      <Header />
+      <Body />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

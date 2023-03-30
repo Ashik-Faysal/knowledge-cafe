@@ -1,42 +1,42 @@
 [
   {
     "id": "01",
-    "author-name": "Habibullah Basher",
-    "read-time": 13,
+    "author": "Habibullah Basher",
+    "readTime": 13,
     "published": "10 Mar 2020",
-    "blog-title": "10 Tips for Writing More Efficient Code in JavaScript",
+    "blogTitle": "10 Tips for Writing More Efficient Code in JavaScript",
     "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8anN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    "author-image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "authorImage": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "about": "10 Essential JavaScript Libraries and Frameworks for Web Developers, Building Interactive Web Applications with ReactJS, Mastering Async Programming in JavaScript with Promises and Async/Await, Debugging JavaScript Code Like a Pro: Tips and Tricks for Faster Troubleshooting"
   },
   {
     "id": "02",
-    "author-name": "Meherun Nesha",
-    "read-time": 20,
+    "author": "Meherun Nesha",
+    "readTime": 20,
     "published": "22 Aug 2020",
-    "blog-title": "The Benefits of Using Test-Driven Development in Your Projects",
+    "blogTitle": "The Benefits of Using Test-Driven Development in Your Projects",
     "image": "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    "author-image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "authorImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "about": "10 Essential JavaScript Libraries and Frameworks for Web Developers, Building Interactive Web Applications with ReactJS, Mastering Async Programming in JavaScript with Promises and Async/Await, Debugging JavaScript Code Like a Pro: Tips and Tricks for Faster Troubleshooting"
   },
   {
     "id": "03",
-    "author-name": "Mostafijur Rahman",
-    "read-time": 9,
+    "author": "Mostafijur Rahman",
+    "reaTime": 9,
     "published": "30 Jan 2020",
-    "blog-title": "An Introduction to Machine Learning: Getting Started with Scikit-Learn",
+    "blogTitle": "An Introduction to Machine Learning: Getting Started with Scikit-Learn",
     "image": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    "author-image": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "authorImage": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "about": "10 Essential JavaScript Libraries and Frameworks for Web Developers, Building Interactive Web Applications with ReactJS, Mastering Async Programming in JavaScript with Promises and Async/Await, Debugging JavaScript Code Like a Pro: Tips and Tricks for Faster Troubleshooting"
   },
   {
     "id": "04",
-    "author-name": "Mst. Arohi",
-    "read-time": 15,
+    "author": "Mst. Arohi",
+    "readTime": 15,
     "published": "28 Feb 2022",
-    "blog-title": "Creating Responsive Web Design with CSS Grid and Flex box",
+    "blogTitle": "Creating Responsive Web Design with CSS Grid and Flex box",
     "image": "https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "author-image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "about": "10 Essential JavaScript Libraries and Frameworks for Web Developers, Building Interactive Web Applications with ReactJS, Mastering Async Programming in JavaScript with Promises and Async/Await, Debugging JavaScript Code Like a Pro: Tips and Tricks for Faster Troubleshooting"
   }
 ]
