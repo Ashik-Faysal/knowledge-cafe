@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ShowCart from "../ShowCart/ShowCart";
 import SingleUser from "../SingleUser/SingleUser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Body = () => {
   const [readTime, setReadTime] = useState(0);
@@ -16,24 +18,29 @@ const Body = () => {
     }
   };
 
-  const [blog, setBlog] = useState([]);
+const [blog, setBlog] = useState([]);
 
   const handleAddToBookmark = (blogTitle) => {
-    const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
-    if (previousBlog) {
-      if (previousBlog.includes(blogTitle)) {
-        alert(`${blogTitle} is already in your bookmark list!`);
-      } else {
-        const newBlog = [...previousBlog, blogTitle];
-        localStorage.setItem("blogTitle", JSON.stringify(newBlog));
-        setBlog(newBlog);
-      }
+  const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
+  if (previousBlog) {
+    if (previousBlog.includes(blogTitle)) {
+      toast.error(`Already bookmarked`);
     } else {
-      const newBlog = [blogTitle];
+      const newBlog = [...previousBlog, blogTitle];
       localStorage.setItem("blogTitle", JSON.stringify(newBlog));
       setBlog(newBlog);
+      toast.success(`Successfully BookMarked`);
     }
-  };
+
+  } else {
+    const newBlog = [blogTitle];
+    localStorage.setItem("blogTitle", JSON.stringify(newBlog));
+    setBlog(newBlog);
+  }
+};
+
+
+
 
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -60,6 +67,7 @@ const Body = () => {
           readTime={readTime}
           blog={blog}
         />
+        <ToastContainer autoClose={1500} />
       </div>
     </div>
   );
