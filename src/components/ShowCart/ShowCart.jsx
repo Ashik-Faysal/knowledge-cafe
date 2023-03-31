@@ -12,8 +12,8 @@ const ShowCart = ({ readTime, blog }) => {
   useEffect(() => {
     const getBlogsFromStorage = localStorage.getItem("blogTitle");
     if (getBlogsFromStorage) {
-      const parsedBlogs = JSON.parse(getBlogsFromStorage);
-      setBlogs(parsedBlogs);
+      const previousBlogs = JSON.parse(getBlogsFromStorage);
+      setBlogs(previousBlogs);
     }
   }, [blog]);
 
@@ -24,10 +24,15 @@ const ShowCart = ({ readTime, blog }) => {
           Spent time on read : {time} mins
         </h4>
       </div>
-      <div>
-        <h3 className="text-3xl">Bookmarked Blog : {blog.length}</h3>
+      <div className="bg-slate-200 p-4">
+        <h3 className="text-3xl">Bookmarked Blog : {blogs.length}</h3>
         {blogs.map((blog, index) => (
-          <p className="text-xl bg-slate-100 my-1 p-1 shadow-lg rounded-2xl" key={index}>{blog}</p>
+          <p
+            className="text-xl bg-slate-100 my-3 p-2 shadow-lg rounded-2xl"
+            key={index}
+          >
+            {blog}
+          </p>
         ))}
       </div>
     </div>

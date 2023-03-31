@@ -16,22 +16,24 @@ const Body = () => {
     }
   };
 
-const [blog, setBlog] = useState([]);
+  const [blog, setBlog] = useState([]);
 
-const handleAddToBookmark = (blogTitle) => {
-  const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
-  if (previousBlog) {
-    const newBlog = [...previousBlog, blogTitle];
-    localStorage.setItem("blogTitle", JSON.stringify(newBlog));
-    setBlog(newBlog);
-  } else {
-    const newBlog = [blogTitle];
-    localStorage.setItem("blogTitle", JSON.stringify(newBlog));
-    setBlog(newBlog);
-  }
-};
-
-
+  const handleAddToBookmark = (blogTitle) => {
+    const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
+    if (previousBlog) {
+      if (previousBlog.includes(blogTitle)) {
+        alert(`${blogTitle} is already in your bookmark list!`);
+      } else {
+        const newBlog = [...previousBlog, blogTitle];
+        localStorage.setItem("blogTitle", JSON.stringify(newBlog));
+        setBlog(newBlog);
+      }
+    } else {
+      const newBlog = [blogTitle];
+      localStorage.setItem("blogTitle", JSON.stringify(newBlog));
+      setBlog(newBlog);
+    }
+  };
 
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -55,7 +57,9 @@ const handleAddToBookmark = (blogTitle) => {
         <ShowCart
           handleReadTime={handleReadTime}
           handleAddToBookmark={handleAddToBookmark}
-          readTime={readTime} blog={blog} />
+          readTime={readTime}
+          blog={blog}
+        />
       </div>
     </div>
   );

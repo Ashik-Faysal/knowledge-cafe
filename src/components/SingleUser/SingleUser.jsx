@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const SingleUser = (props) => {
-  console.log(props.user);
+  // console.log(props.user);
   const {
     id,
     author,
