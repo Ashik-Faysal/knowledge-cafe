@@ -23,7 +23,7 @@ const Body = () => {
   }, []);
   return (
     <div className="md:flex gap-4 my-12]">
-      <div className="md:w-[70%] ">
+      <div className="md:w-[65%] ">
         {users.map((user) => (
           <SingleUser
             user={user}
@@ -32,7 +32,7 @@ const Body = () => {
           />
         ))}
       </div>
-      <div className="md:w-[25%] card border border-warning">
+      <div className="md:w-[32%] card p-4 mt-4">
         <ShowCart handleReadTime={handleReadTime} readTime={readTime} />
       </div>
     </div>
