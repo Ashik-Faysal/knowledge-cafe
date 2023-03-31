@@ -26,8 +26,8 @@ const SingleUser = (props) => {
             <p>{published}</p>
           </div>
         </div>
-        <div>
-          <span className="m-2">{readTime} min read</span>
+        <div className="flex gap-2 items-center">
+          <span>{readTime} min read</span>
           <FontAwesomeIcon icon={faBookmark} />
         </div>
       </div>

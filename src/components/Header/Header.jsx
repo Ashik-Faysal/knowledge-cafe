@@ -1,26 +1,28 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-stone-100 text-black">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-3xl font-bold">Knowledge Care</a>
+          <a className="btn btn-ghost normal-case text-3xl font-bold">
+            Knowledge Care
+          </a>
         </div>
-              <div className="flex-none gap-2">
-                  <ul>
-                      <li className="btn btn-ghost">Contact us</li>
-                      <li className="btn btn-ghost">About us</li>
-                  </ul>
-                  <div className="form-control">
+        <div className="flex-none gap-2">
+          <ul>
+            <li className="btn btn-ghost">Contact us</li>
+            <li className="btn btn-ghost">About us</li>
+          </ul>
+          <div>
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered"
+              className="input input-bordered w-24"
             />
           </div>
-          <div className="dropdown dropdown-end">
+          <div>
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
