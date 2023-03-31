@@ -15,6 +15,24 @@ const Body = () => {
       setReadTime(time);
     }
   };
+
+const [blog, setBlog] = useState([]);
+
+const handleAddToBookmark = (blogTitle) => {
+  const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
+  if (previousBlog) {
+    const newBlog = [...previousBlog, blogTitle];
+    localStorage.setItem("blogTitle", JSON.stringify(newBlog));
+    setBlog(newBlog);
+  } else {
+    const newBlog = [blogTitle];
+    localStorage.setItem("blogTitle", JSON.stringify(newBlog));
+    setBlog(newBlog);
+  }
+};
+
+
+
   const [users, setUsers] = useState([]);
   useEffect(() => {
     fetch("fakeData.json")
@@ -29,11 +47,15 @@ const Body = () => {
             user={user}
             key={user.id}
             handleReadTime={handleReadTime}
+            handleAddToBookmark={handleAddToBookmark}
           />
         ))}
       </div>
       <div className="md:w-[32%] card p-4 mt-4">
-        <ShowCart handleReadTime={handleReadTime} readTime={readTime} />
+        <ShowCart
+          handleReadTime={handleReadTime}
+          handleAddToBookmark={handleAddToBookmark}
+          readTime={readTime} blog={blog} />
       </div>
     </div>
   );

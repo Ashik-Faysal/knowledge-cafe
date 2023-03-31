@@ -15,6 +15,7 @@ const SingleUser = (props) => {
     published,
   } = props.user;
   const handleReadTime = props.handleReadTime;
+  const handleAddToBookmark = props.handleAddToBookmark;
   return (
     <div className="border border-warning p-4 m-4 card">
       <img src={image} alt="" />
@@ -27,8 +28,11 @@ const SingleUser = (props) => {
           </div>
         </div>
         <div className="flex gap-2 items-center">
-          <span>{readTime} min read</span>
-          <FontAwesomeIcon icon={faBookmark} />
+          <span>{readTime} mins read</span>
+          <FontAwesomeIcon
+            onClick={() => handleAddToBookmark(blogTitle)}
+            icon={faBookmark}
+          />
         </div>
       </div>
       <div>
