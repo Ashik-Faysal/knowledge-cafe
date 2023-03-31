@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Blog"
+import ShowBlog from '../ShowBlog/ShowBlog';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -17,14 +18,7 @@ const Blog = () => {
             </header>
             <div>
           {
-            blogs.map(blog => {
-              return (
-                <div className='bg-gray-400  p-4 my-6 shadow-2xl rounded-3xl'>
-                  <h4 className='text-2xl font-semibold mb-2'>{blog.id}.{blog.question}</h4>
-                  <p>Answer: {blog.answer}</p>
-                </div>
-              )
-            })
+            blogs.map(blog => <ShowBlog key={blog.id} blog={blog} />)
                 }
             </div>
       </div>

@@ -4,10 +4,10 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-stone-100 text-black">
+      <div className="navbar bg-stone-400 rounded-xl">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-3xl font-bold">
-            Knowledge Care
+            Knowledge Cafe
           </a>
         </div>
         <div className="flex-none gap-2">
