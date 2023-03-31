@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-
 const SingleUser = (props) => {
   console.log(props.user);
   const {
@@ -15,6 +14,7 @@ const SingleUser = (props) => {
     image,
     published,
   } = props.user;
+  const handleReadTime = props.handleReadTime;
   return (
     <div className="border border-warning p-4 m-4 card">
       <img src={image} alt="" />
@@ -34,7 +34,12 @@ const SingleUser = (props) => {
       <div>
         <h1 className="text-2xl font-bold">{blogTitle}</h1>
 
-        <button className="btn btn-link text-blue-700">Mark as read</button>
+        <button
+          onClick={() => handleReadTime(readTime)}
+          className="btn btn-link text-blue-700"
+        >
+          Mark as read
+        </button>
       </div>
     </div>
   );
