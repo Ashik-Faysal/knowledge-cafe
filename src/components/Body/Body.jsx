@@ -5,6 +5,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Body = () => {
+
+  //! HandleReadTime Function
+
   const [readTime, setReadTime] = useState(0);
   const handleReadTime = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
@@ -18,30 +21,39 @@ const Body = () => {
     }
   };
 
+  //! handleAddToBookmark function 
 const [blog, setBlog] = useState([]);
-
-  const handleAddToBookmark = (blogTitle) => {
+const [isFirstClick, setIsFirstClick] = useState(true);
+const handleAddToBookmark = (blogTitle) => {
   const previousBlog = JSON.parse(localStorage.getItem("blogTitle"));
   if (previousBlog) {
     if (previousBlog.includes(blogTitle)) {
-      toast.error(`Already bookmarked`);
+      toast.error("Already bookmarked");
     } else {
       const newBlog = [...previousBlog, blogTitle];
       localStorage.setItem("blogTitle", JSON.stringify(newBlog));
       setBlog(newBlog);
-      toast.success(`Successfully BookMarked`);
+      if (isFirstClick) {
+        setIsFirstClick(false);
+        toast.success("You have bookmarked your first article!");
+      } else {
+        toast.success("Successfully bookmarked");
+      }
     }
-
   } else {
     const newBlog = [blogTitle];
     localStorage.setItem("blogTitle", JSON.stringify(newBlog));
     setBlog(newBlog);
+    if (isFirstClick) {
+      setIsFirstClick(false);
+      toast.success("You have bookmarked your first article!");
+    } else {
+      toast.success("Successfully bookmarked");
+    }
   }
 };
 
-
-
-
+  //! For Fake Data 
   const [users, setUsers] = useState([]);
   useEffect(() => {
     fetch("fakeData.json")
