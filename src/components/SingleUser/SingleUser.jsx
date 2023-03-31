@@ -17,7 +17,7 @@ const SingleUser = (props) => {
   const handleReadTime = props.handleReadTime;
   const handleAddToBookmark = props.handleAddToBookmark;
   return (
-    <div className="border border-warning p-4 m-4 card">
+    <div className="border border-warning p-4 my-4 card">
       <img src={image} alt="" />
       <div className="my-4 flex justify-between items-center">
         <div className="flex gap-4 my-4">

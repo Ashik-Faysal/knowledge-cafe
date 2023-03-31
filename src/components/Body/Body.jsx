@@ -62,7 +62,7 @@ const handleAddToBookmark = (blogTitle) => {
   }, []);
   return (
     <div className="md:flex gap-4 my-12]">
-      <div className="md:w-[65%] ">
+      <div className="md:w-[68%] ">
         {users.map((user) => (
           <SingleUser
             user={user}
